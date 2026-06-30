@@ -16,7 +16,7 @@ Durante desenvolvimento, homologação ou suporte, é comum a aplicação exibir
 |---|---|---|
 | **Servidor** | Cache da aplicação | Limpa cache no servidor via `/admin/application.aspx` e volta para a URL original |
 | **Reload** | Cache do navegador | Limpa no servidor, volta para a URL original e faz hard reload (`bypassCache`) |
-| **Bypass** | Nova requisição | Limpa no servidor e volta com `?nocache=timestamp` na URL original |
+| **Bypass** | Atualizar versão | Limpa no servidor e volta com `?nocache=timestamp` na URL original |
 | **Limpeza completa** | Aplicação, navegador e bypass | Executa servidor + bypass + reload em sequência |
 
 ### Fluxo comum (todos os botões)
@@ -33,7 +33,17 @@ O ambiente (`app`, `homolog`, etc.) é detectado automaticamente pelo subdomíni
 
 ## Requisitos
 
-- Google Chrome (ou navegador compatível com extensões Manifest V3)
+### Navegador
+
+A extensão foi desenvolvida para **Google Chrome** e funciona sem alterações em navegadores **baseados em Chromium**, como:
+
+- Google Chrome
+- Microsoft Edge
+- Brave
+- Opera
+
+### Demais requisitos
+
 - Estar com uma aba aberta em `*.arker.com.br` ao usar a extensão
 - Acesso ao admin da Arker no ambiente correspondente
 
