@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Cache Cleaner",
   "version": "1.0",
-  "description": "Limpeza automática de cache",
+  "description": "Extensão de uso interno para limpeza de cache em ambientes Arker.",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
